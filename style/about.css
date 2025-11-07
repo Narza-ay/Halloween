@@ -1,0 +1,129 @@
+/* ===== Global Styles ===== */
+body {
+    background-color: #121212;
+}
+
+/* ===== Main Layout ===== */
+
+.about-main {
+    font-family: system-ui, sans-serif;
+    color: #e4e4e7;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+/* ===== Hero Section ===== */
+.about-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 28.8px - (16px*2));
+    text-align: center;
+    padding: 0 5%;
+    background: radial-gradient(circle at bottom, #000 22px, #121212 65%);
+}
+
+.about-title {
+    font-size: 3rem;
+    color: #f95a25;
+    margin-bottom: 1rem;
+}
+
+.about-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #d4d4d8;
+    font-size: 1.1rem;
+}
+
+.highlight {
+    color: #f95a25;
+    font-weight: 600;
+}
+
+/* ===== Mission Section ===== */
+.about-mission {
+    padding: 20vh 0;
+    height: calc(100vh - 28.8px - (16px*2));
+    background: radial-gradient(circle at top, #000 22px, #121212 65%);
+}
+
+.mission-content {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.mission-text {
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.mission-text p {
+    margin-bottom: 1.5rem;
+    color: #d4d4d8;
+    line-height: 1.6;
+}
+
+/* ===== Team Section ===== */
+.about-team {
+    background-color: #0a0a0a;
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #f95a25;
+    margin-bottom: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.team-card {
+    background-color: #121212;
+    border-radius: 16px;
+    padding: 2rem 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 4px 40px rgba(249, 90, 37, 0.4);
+}
+
+.team-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.team-role {
+    font-size: 0.95rem;
+    color: #d4d4d8;
+}
+
+/* ===== Quote Section ===== */
+.about-quote {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #121212;
+    font-style: italic;
+}
+
+.about-quote blockquote {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #d4d4d8;
+}

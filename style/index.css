@@ -1,0 +1,112 @@
+/* ===== Global Styles ===== */
+body {
+    background-color: #000000;
+}
+
+/* ===== Home Section ===== */
+.home-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: calc(100vh - 28.8px - (16px*2));
+    width: 100%;
+    background-color: #000000;
+}
+
+.home-image {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+.home-content .home-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.home-content .home-text h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.home-content .home-image {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: auto;
+    z-index: 10;
+}
+
+/* ===== Best Sellers ===== */
+.best-sellers {
+    margin-top: 35vh;
+    padding: 2rem 8rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: auto;
+    background: linear-gradient(#00000000 0%, #121212 100%);
+    z-index: 1000;
+}
+
+.best-sellers-section {
+    padding: 5rem 5%;
+    background-color: #0a0a0a;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #f95a25;
+    margin-bottom: 3rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* ChatGPT */
+    gap: 2rem;
+    justify-items: center;
+}
+
+.product-card {
+    background-color: #121212;
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 4px 40px rgba(249, 90, 37, 0.4);
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #fff;
+}
+
+.product-price {
+    color: #f95a25;
+    font-weight: 500;
+}

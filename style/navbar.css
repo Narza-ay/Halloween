@@ -1,0 +1,63 @@
+/* ===== Header & Navbar Base ===== */
+.navbar {
+  padding: 1rem 2rem;
+  z-index: 1000;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===== Logo ===== */
+.navbar-logo {
+  height: 3.3vh;
+}
+
+/* ===== Links ===== */
+.navbar-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #d3d3d3;
+  transition: color 0.25s;
+}
+
+.navbar a:hover {
+  color: #8a8a8a;
+}
+
+/* ===== Actions (Buttons, Cart, etc.) ===== */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  color: #d3d3d3;
+  cursor: pointer;
+  transition: color 0.25s, background 0.25s;
+}
+
+/* Login Button Specific */
+.navbar-actions .login-button {
+  background-color: #303030;
+  padding: 0.4rem 1.2rem;
+  border-radius: 18px;
+  color: #e4e4e7;
+  font-weight: 600;
+}
+
+.login-btn:hover {
+  background-color: #3b3b3b;
+}
