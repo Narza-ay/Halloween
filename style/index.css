@@ -52,7 +52,7 @@ body {
 /* ===== Best Sellers ===== */
 .best-sellers {
     margin-top: 35vh;
-    padding: 2rem 8rem;
+    padding: 2rem 10%;
     position: relative;
     display: flex;
     flex-direction: column;

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Exemple : audio, vidéo et tableau</title>
+    <style>
+        :root {
+            --primary: #ff6600;
+        }
+
+        body {
+            font-family: "Roboto", Arial;
+            padding: 2rem;
+            line-height: 1.5;
+            color: #111;
+        }
+
+        header {
+            margin-bottom: 1.5rem;
+        }
+
+        .media {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .card {
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03)
+        }
+
+        table {
+            width: 100%;
+            margin-top: 1rem
+        }
+
+        th,
+        td {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid #ddd;
+            text-align: left
+        }
+
+        th {
+            background: #f7f7f8
+        }
+
+        caption {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 700px) {
+            .media {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .title {
+            color: var(--primary);
+            position: relative;
+        }
+
+        .title::before {
+            content: "";
+            position: absolute;
+            left: -0.5rem;
+            bottom: -0.2rem;
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+
+        .title::after {
+            content: "";
+            position: absolute;
+            right: -0.5rem;
+            bottom: -0.2rem;
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Page pour mettre en plus ce qui n'est pas dans le site.</h1>
+        <p>Un <code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code> et un tableau HTML.</p>
+        <a href="./index.html">Retour a l'accueil</a>
+    </header>
+
+    <section class="media">
+        <div class="card">
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="./ressources/media/audio/sample-audio.mp3" type="audio/mpeg">
+                <source src="./ressources/media/audio/sample-audio.ogg" type="audio/ogg">
+                Votre navigateur ne supporte pas la balise audio.
+            </audio>
+            <p>Contrôles natifs, lecture/pause, volume.</p>
+        </div>
+
+        <figure>
+            <img src="./ressources/images/grotesk_logo.png" alt="Image">
+            <figcaption>Image</figcaption>
+        </figure>
+
+        <div class="card">
+            <h2>Vidéo</h2>
+            <video controls width="100%" preload="metadata">
+                <source src="./ressources/media/video/sample-video.mp4" type="video/mp4">
+                <source src="./ressources/media/video/sample-video.webm" type="video/webm">
+                Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+            <p>Contrôles natifs, choisissez un format compatible.</p>
+        </div>
+    </section>
+
+    <section class="card" style="margin-top:1rem">
+        <h2>Tableau</h2>
+        <table>
+            <caption>Exemple de tableau simple</caption>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nom</th>
+                    <th>Rôle</th>
+                    <th>Âge</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Quentin</td>
+                    <td>Joueur</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Enzo</td>
+                    <td>Chai pas</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lilou</td>
+                    <td>Mon ex</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>
